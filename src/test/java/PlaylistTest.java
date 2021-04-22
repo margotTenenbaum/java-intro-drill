@@ -45,18 +45,18 @@ public class PlaylistTest {
        assertArrayEquals(songArray, playlist.songNames());
    }
 
-//    @Test
-//    public void totalDuration_showsTotalDurationOfAllSongsInPlaylist() {
-//        Playlist playlist = new Playlist("Non-empty Playlist");
-//
-//        assertEquals(0, playlist.totalDuration());
-//
-//        playlist.addSong(new Song("Radiohead", "Everything In Its Right Place", 200));
-//        playlist.addSong(new Song("Pink Floyd", "Time", 408));
-//
-//        assertEquals(200+408, playlist.totalDuration());
-//    }
-//
+   @Test
+   public void totalDuration_showsTotalDurationOfAllSongsInPlaylist() {
+       Playlist playlist = new Playlist("Non-empty Playlist");
+
+       assertEquals(0, playlist.totalDuration());
+
+       playlist.addSong(new Song("Radiohead", "Everything In Its Right Place", 200));
+       playlist.addSong(new Song("Pink Floyd", "Time", 408));
+
+       assertEquals(200+408, playlist.totalDuration());
+   }
+
 //    @Test
 //    public void swapSongs_allowsSongsToBeSwappedInPlaylistOrder() {
 //        Playlist playlist = new Playlist("Swap Playlist");

@@ -30,4 +30,14 @@ public class Playlist {
 
     return songNames;
   }
+
+  public int totalDuration() {
+    int totalDur = 0;
+    int i = 0;
+    for (Song song : playlist) {
+      totalDur+= song.durationInSeconds;
+      i++;
+    }
+    return totalDur;
+  }
 }
