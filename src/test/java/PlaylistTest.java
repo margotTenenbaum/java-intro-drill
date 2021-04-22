@@ -29,22 +29,22 @@ public class PlaylistTest {
        Playlist emptyPlaylist = new Playlist("Empty Playlist");
        assertTrue(emptyPlaylist.isEmpty());
    }
-//
-//    @Test
-//    public void songNames_allowsYouToSeeSongNamesInOrderAdded() {
-//        Playlist playlist = new Playlist("Non-empty Playlist");
-//
-//        assertArrayEquals(new Song[0], playlist.songNames());
-//
-//        Song everything = new Song("Radiohead", "Everything In Its Right Place", 200);
-//        Song time = new Song("Pink Floyd", "Time", 408);
-//        playlist.addSong(everything);
-//        playlist.addSong(time);
-//
-//        String[] songArray = {"Everything In Its Right Place", "Time"};
-//        assertArrayEquals(songArray, playlist.songNames());
-//    }
-//
+
+   @Test
+   public void songNames_allowsYouToSeeSongNamesInOrderAdded() {
+       Playlist playlist = new Playlist("Non-empty Playlist");
+
+       assertArrayEquals(new Song[0], playlist.songNames());
+
+       Song everything = new Song("Radiohead", "Everything In Its Right Place", 200);
+       Song time = new Song("Pink Floyd", "Time", 408);
+       playlist.addSong(everything);
+       playlist.addSong(time);
+
+       String[] songArray = {"Everything In Its Right Place", "Time"};
+       assertArrayEquals(songArray, playlist.songNames());
+   }
+
 //    @Test
 //    public void totalDuration_showsTotalDurationOfAllSongsInPlaylist() {
 //        Playlist playlist = new Playlist("Non-empty Playlist");
