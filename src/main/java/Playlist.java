@@ -49,4 +49,10 @@ public class Playlist {
     playlist.set(index1, song2);
     playlist.set(index2, song1);
   }
+
+  public void removeSong(Song song) {
+    int index = playlist.indexOf(song);
+    playlist.remove(index);
+    this.index--;
+  }
 }
