@@ -13,11 +13,11 @@ public class PlaylistTest {
         assertEquals("Worst Playlist", playlist2.name);
     }
 
-//    @Test
-//    public void createPlaylist_isEmptyByDefault() {
-//        Playlist playlist = new Playlist("Empty Playlist");
-//        assertTrue(playlist.isEmpty());
-//    }
+   @Test
+   public void createPlaylist_isEmptyByDefault() {
+       Playlist playlist = new Playlist("Empty Playlist");
+       assertTrue(playlist.isEmpty());
+   }
 //
 //    @Test
 //    public void addSong_addsASongToPlaylist() {
