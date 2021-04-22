@@ -18,17 +18,17 @@ public class PlaylistTest {
        Playlist playlist = new Playlist("Empty Playlist");
        assertTrue(playlist.isEmpty());
    }
-//
-//    @Test
-//    public void addSong_addsASongToPlaylist() {
-//        Playlist playlist = new Playlist("Non-empty Playlist");
-//        Song mySong = new Song("Radiohead", "Everything In Its Right Place", 200);
-//        playlist.addSong(mySong);
-//        assertFalse(playlist.isEmpty());
-//
-//        Playlist emptyPlaylist = new Playlist("Empty Playlist");
-//        assertTrue(emptyPlaylist.isEmpty());
-//    }
+
+   @Test
+   public void addSong_addsASongToPlaylist() {
+       Playlist playlist = new Playlist("Non-empty Playlist");
+       Song mySong = new Song("Radiohead", "Everything In Its Right Place", 200);
+       playlist.addSong(mySong);
+       assertFalse(playlist.isEmpty());
+
+       Playlist emptyPlaylist = new Playlist("Empty Playlist");
+       assertTrue(emptyPlaylist.isEmpty());
+   }
 //
 //    @Test
 //    public void songNames_allowsYouToSeeSongNamesInOrderAdded() {
