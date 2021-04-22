@@ -40,4 +40,13 @@ public class Playlist {
     }
     return totalDur;
   }
+
+  public void swap(Song song1, Song song2) {
+    //get indices
+    int index1 = playlist.indexOf(song1);
+    int index2 = playlist.indexOf(song2);
+    //swap them
+    playlist.set(index1, song2);
+    playlist.set(index2, song1);
+  }
 }
