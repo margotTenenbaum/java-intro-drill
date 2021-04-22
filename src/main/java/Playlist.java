@@ -6,4 +6,8 @@ public class Playlist {
   public Playlist(String name) {
     this.name = name;
   }
+
+  public boolean isEmpty() {
+    return true;
+  }
 }
